@@ -246,7 +246,7 @@ export default function MainLayout(props){
     
   const location = useLocation()
   const currentMenu = getNodeFromTree(location.pathname, menuWithKey, 'path')
-  const [ready, setReady] = useState(false)
+  // const [ready, setReady] = useState(false)
   // 返回所有带有children的id
   const getAllChildrenId = (data) => {
     return data.reduce((a, b) => {
@@ -307,7 +307,7 @@ export default function MainLayout(props){
         </Header>
         <Content>
           <PageLocation currentMenu={currentMenu} />
-          <div className='layout-main'>{ready && props.children}</div>
+          <div className='layout-main'>{props.children}</div>
         </Content>
       </Layout>
     </Layout>

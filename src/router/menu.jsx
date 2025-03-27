@@ -39,7 +39,7 @@ export const menu = async () => {
               "code": null,
               "ids": null,
               "menuIcon": null,
-              "path": "/main/domain/index",
+              "path": "/main/domain",
               "paths": null,
               "parentId": "10711834179821568",
               "type": 1,
